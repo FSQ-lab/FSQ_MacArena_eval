@@ -1,0 +1,19 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+
+# Cloned upstream reference & downloaded VM images / runtime outputs
+MacArena/
+vm_cache/
+vm_golden/
+runs/
+artifacts/
+tmp/
+*.utm/
+*.img
+*.mp4

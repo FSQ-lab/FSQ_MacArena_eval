@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "name": "golden_regression_36",
+  "description": "36-task high-signal regression manifest drawn from the 93 non-passing tasks of `runs/official-full421` (`macarena` + `macosworld`), covering P0-1, P0-2, P1-1, P1-2, and P2-1.",
+  "subsets": [
+    "macarena",
+    "macosworld"
+  ],
+  "totalTasks": 36,
+  "groupCounts": {
+    "P0_1_tcc_window1_false_negatives": 10,
+    "P0_2_frontmost_focus_and_setup_race": 8,
+    "P1_2_missing_iwork_and_libreoffice": 5,
+    "P1_1_anaconda_symlink_launch": 3,
+    "P1_1_sdk_type_key_and_snapshot": 4,
+    "P2_1_save_extension_and_gui_write_discipline": 3,
+    "P1_2_obsidian_vault_and_patched_oracle_control": 3
+  },
+  "tasks": [
+    {
+      "taskId": "f7ea0080-d3b6-62ac-c550-bb31ff93a932",
+      "subset": "macosworld",
+      "category": "sys_and_interface",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Go to Siri Settings."
+    },
+    {
+      "taskId": "e02839ef-afae-ab1f-0837-61f81d1605a0",
+      "subset": "macosworld",
+      "category": "file_management",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Turn on \"About Finder\"."
+    },
+    {
+      "taskId": "6ddeb5ae-f4b0-1651-cf7c-2a22433af55a",
+      "subset": "macosworld",
+      "category": "sys_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Launch \"Stocks\" and click AAPL to view its detailed stock price."
+    },
+    {
+      "taskId": "523621a6-149f-3bb7-5193-401d4bd45b97",
+      "subset": "macosworld",
+      "category": "sys_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Check Boeing's stock one-day detailed stock price in the Stocks app."
+    },
+    {
+      "taskId": "cb187818-649a-795c-fe02-47e283cc5856",
+      "subset": "macosworld",
+      "category": "sys_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Create a new board in Freeform, open it and name it as \"Everything\"."
+    },
+    {
+      "taskId": "ff9779d1-c51a-a478-68c4-1ba547a11adc",
+      "subset": "macosworld",
+      "category": "sys_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Preview STHeiti (Simplified Chinese) in Font book."
+    },
+    {
+      "taskId": "09b8c538-7fa1-9379-fa44-68d460d92861",
+      "subset": "macosworld",
+      "category": "file_management",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Open the Chinese version of the passage (probably named \"马特洪人\") using QuickLook."
+    },
+    {
+      "taskId": "db0950a0-a9ad-0ab3-8218-18f5db1ce41f",
+      "subset": "macosworld",
+      "category": "file_management",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Preview the Japanese version of the passage \"Matterhorn Man\"."
+    },
+    {
+      "taskId": "93909e6f-6727-d1af-29db-e66b2ca4a733",
+      "subset": "macosworld",
+      "category": "file_management",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Preview the png image without opening it."
+    },
+    {
+      "taskId": "4fb31f99-0748-3a41-a11f-e166f194e4c8",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_1_tcc_window1_false_negatives",
+      "groupRationale": "Guest `:5000` Aqua LaunchAgent + `kTCCServiceAccessibility` / `kTCCServiceScreenCapture` (`System Events -> window 1`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Resize the black SVG file on the desktop to 200x200, then preview it."
+    },
+    {
+      "taskId": "2db5297f-0f41-1a5e-7e5c-d109d2993b63",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Help me zoom in the current document to exactly 300%."
+    },
+    {
+      "taskId": "75ae61f4-5cde-2e6b-28f0-5bbf8303726d",
+      "subset": "macosworld",
+      "category": "advanced",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Every time I press the Tab key, I want it to indent by only two spaces. Please help me set it up. After changing that, do not close the settings panel because I want to see where you did the setting."
+    },
+    {
+      "taskId": "5d72e772-38e2-a556-a48f-39e1403faff3",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I really like the color of this slide. Help me measure this color and write its decimal RGB values in R, G, B format (e.g., 0, 191, 243) in a memo."
+    },
+    {
+      "taskId": "899e5b70-d0ad-9dd9-aef2-224cf79488c8",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Use the system's built-in calculator to calculate the average score of the students, then round the average down, and fill it into the table (remember to press Enter, otherwise the numbers won't save)."
+    },
+    {
+      "taskId": "99666500-169b-1222-a481-829f01b02155",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Please help me revise this article according to the teacher's suggestions. The teacher's feedback is in review.txt on the desktop."
+    },
+    {
+      "taskId": "132c574d-ef6c-7633-c387-1d53b5826411",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I wrongly keyed in my actual food spending this month to be 205.75, which should be 305.75. Please help me correct this value in the budget calculator."
+    },
+    {
+      "taskId": "0b6ae1df-867d-bfd9-0dde-538cc4e282dc",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "In the project document, go to products and change my previous choice of the dishwasher to model B."
+    },
+    {
+      "taskId": "140d3f1f-c35a-e0ca-4c35-cd8b3a6220d0",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I am using the current template from the last lecture to create slides for the next lecture. Help me change Lecture 5 to Lecture 6, and the title to \"Image Enhancement\"."
+    },
+    {
+      "taskId": "4f7b220f-9041-4a82-bf6c-abd84093099c",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Numbers"
+      ],
+      "instruction": "Merge two existing documents in Numbers: 'finance_overview.csv' and 'expenses_detail.csv', combine their tables into a master overview table, and save it as 'complete_financial_report.xlsx' in the Documents folder."
+    },
+    {
+      "taskId": "5457a409-9818-4a37-8075-fd4001ed5a22",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Keynote"
+      ],
+      "instruction": "Create a new presentation in Keynote using the 'Exhibition' template, and save it as 'Quarterly_Report.key' in the Documents folder."
+    },
+    {
+      "taskId": "71479950-75a4-436c-a8f3-83adb0bed241",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Keynote"
+      ],
+      "instruction": "Create a new '~/Documents/Business_Review.key'. On the 4th slide, add a pie chart that represents market share with three slices labeled 'Product A', 'Product B', and 'Product C' with values 40%, 35%, and 25% respectively. Save the presentation as a pdf."
+    },
+    {
+      "taskId": "9530fcb9-4665-4fd9-a411-0fa3e8653dd7",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Pages"
+      ],
+      "instruction": "Create a new document using the 'Resume' template, fill in the name Jane Riley, then save it as 'My_Resume.pages' in the Documents folder."
+    },
+    {
+      "taskId": "a1d3b22f-4d2f-431f-95a4-43a5fc67230a",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "LibreOffice"
+      ],
+      "instruction": "Import the CSV file 'employee_list.csv' from the Downloads folder into Calc, sort the data by last names, and save it as 'Sorted_Employee_List.csv' in the Documents folder."
+    },
+    {
+      "taskId": "a08d4ef6-e2de-476a-8097-d3a07776d619",
+      "subset": "macarena",
+      "category": "advanced_apps",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_anaconda_symlink_launch",
+      "groupRationale": "`appium-connect-agent` symlinked `.app` bundle validation & non-standard bundle activation (`Anaconda-Navigator.app`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Anaconda-Navigator"
+      ],
+      "instruction": "Update all packages in the 'data_analysis' virtual environment to the latest versions via the Anaconda interface."
+    },
+    {
+      "taskId": "c377a2d0-5844-41af-b80b-a48d44bfc756",
+      "subset": "macarena",
+      "category": "advanced_apps",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_anaconda_symlink_launch",
+      "groupRationale": "`appium-connect-agent` symlinked `.app` bundle validation & non-standard bundle activation (`Anaconda-Navigator.app`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Anaconda-Navigator"
+      ],
+      "instruction": "Remove the 'data_analysis' virtual environment entirely using the Anaconda Navigator."
+    },
+    {
+      "taskId": "d2b53cf2-aa18-44aa-a8d5-84194a7791d0",
+      "subset": "macarena",
+      "category": "advanced_apps",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_anaconda_symlink_launch",
+      "groupRationale": "`appium-connect-agent` symlinked `.app` bundle validation & non-standard bundle activation (`Anaconda-Navigator.app`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Anaconda-Navigator"
+      ],
+      "instruction": "Launch Jupyter Notebook from Anaconda Navigator and create a new notebook titled 'Data_Exploration.ipynb' on my Desktop."
+    },
+    {
+      "taskId": "258922d0-23a3-4070-97c6-efa577da0dc4",
+      "subset": "macarena",
+      "category": "system_and_interface",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_sdk_type_key_and_snapshot",
+      "groupRationale": "`type_text` enabled/timeout recovery, `press_key` alias mapping, `ui_snapshot` depth truncation, and system bundle lookup",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Automator"
+      ],
+      "instruction": "Create a workflow that collects all files from the 'Downloads' folder older than 30 days and moves them to an 'Archived' folder in 'Documents'."
+    },
+    {
+      "taskId": "9fe98f0a-0450-d517-5bed-30a2e76a69f6",
+      "subset": "macosworld",
+      "category": "file_management",
+      "baseVm": "osworld",
+      "regressionGroup": "P1_1_sdk_type_key_and_snapshot",
+      "groupRationale": "`type_text` enabled/timeout recovery, `press_key` alias mapping, `ui_snapshot` depth truncation, and system bundle lookup",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "My son was naughty. He added an extra file to the current folder. Help me find out this unusual file and copy its contents to the Notes app."
+    },
+    {
+      "taskId": "2131d094-4eef-4bc7-8754-8888d5231781",
+      "subset": "macarena",
+      "category": "system_and_interface",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_sdk_type_key_and_snapshot",
+      "groupRationale": "`type_text` enabled/timeout recovery, `press_key` alias mapping, `ui_snapshot` depth truncation, and system bundle lookup",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Shortcuts"
+      ],
+      "instruction": "Create a shortcut that archives all files from the 'Projects' folder in Documents into a single ZIP file and saves it to the Desktop and run it."
+    },
+    {
+      "taskId": "670cda14-ba46-9cea-bbdd-80bc7b1a0de1",
+      "subset": "macosworld",
+      "category": "sys_and_interface",
+      "baseVm": "osworld",
+      "regressionGroup": "P1_1_sdk_type_key_and_snapshot",
+      "groupRationale": "`type_text` enabled/timeout recovery, `press_key` alias mapping, `ui_snapshot` depth truncation, and system bundle lookup",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I wish to check the System Regulatory Certification. Please help me find this document and view it."
+    },
+    {
+      "taskId": "86b5d27f-e61e-1eb1-3b5c-267952a90cd3",
+      "subset": "macosworld",
+      "category": "advanced",
+      "baseVm": "osworld",
+      "regressionGroup": "P2_1_save_extension_and_gui_write_discipline",
+      "groupRationale": "Save sheet extension preservation (`.pages` / `.key`) and GUI editor write discipline (`Script Editor` vs verbal-only output)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Help me write one line of Apple Script to obtain the name of the app whose window is currently the frontmost. Don't run the script."
+    },
+    {
+      "taskId": "6c13b520-a2ca-1556-9b85-e5662b5cf923",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P2_1_save_extension_and_gui_write_discipline",
+      "groupRationale": "Save sheet extension preservation (`.pages` / `.key`) and GUI editor write discipline (`Script Editor` vs verbal-only output)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Please help me save the current file in a folder called `Lecture Notes New` on Desktop. Name the file as `Lecture 6 template`."
+    },
+    {
+      "taskId": "9e64f6c8-acd8-e187-fe8e-c2b6856913ba",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P2_1_save_extension_and_gui_write_discipline",
+      "groupRationale": "Save sheet extension preservation (`.pages` / `.key`) and GUI editor write discipline (`Script Editor` vs verbal-only output)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "How to save the current file to desktop with file name \"Template\"? Please help me do that."
+    },
+    {
+      "taskId": "57d79cb5-ea19-4079-af27-200bf53421cd",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_obsidian_vault_and_patched_oracle_control",
+      "groupRationale": "Obsidian `ResearchVault` warm-trust indexing + upstream `InitialKeyRepeat` oracle inversion control (`--oracle-mode patched-oracle`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Obsidian"
+      ],
+      "instruction": "Switch the ResearchVault's theme to light."
+    },
+    {
+      "taskId": "dc6870aa-2ce4-4447-99d7-6af5b6638ee3",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_obsidian_vault_and_patched_oracle_control",
+      "groupRationale": "Obsidian `ResearchVault` warm-trust indexing + upstream `InitialKeyRepeat` oracle inversion control (`--oracle-mode patched-oracle`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Obsidian"
+      ],
+      "instruction": "Inside ResearchVault, create a new note called \"Links.md\" that contains a wiki-link to \"Ideas.md\"."
+    },
+    {
+      "taskId": "957ae859-e96e-74b5-3754-2efd2bcdf027",
+      "subset": "macosworld",
+      "category": "sys_and_interface",
+      "baseVm": "osworld",
+      "regressionGroup": "P1_2_obsidian_vault_and_patched_oracle_control",
+      "groupRationale": "Obsidian `ResearchVault` warm-trust indexing + upstream `InitialKeyRepeat` oracle inversion control (`--oracle-mode patched-oracle`)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I want to set the duration before a key repeats after holding it down to the maximum. Please help me complete this setting."
+    }
+  ]
+}

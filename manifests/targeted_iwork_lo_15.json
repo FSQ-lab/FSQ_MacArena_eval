@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "name": "targeted_iwork_lo_15",
+  "description": "15-task targeted closure manifest: 7 iWork same-bundle launch_app/keep-alive tasks + 5 macarena iWork/LibreOffice donor-app sync tasks + 3 macos-harness.md discipline tasks.",
+  "subsets": [
+    "macarena",
+    "macosworld"
+  ],
+  "totalTasks": 15,
+  "groupCounts": {
+    "iwork_same_bundle_idempotent_and_keepalive": 7,
+    "macarena_iwork_libreoffice_donor_sync": 5,
+    "macos_harness_skill_discipline": 3
+  },
+  "tasks": [
+    {
+      "taskId": "5d72e772-38e2-a556-a48f-39e1403faff3",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I really like the color of this slide. Help me measure this color and write its decimal RGB values in R, G, B format (e.g., 0, 191, 243) in a memo.",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "899e5b70-d0ad-9dd9-aef2-224cf79488c8",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Use the system's built-in calculator to calculate the average score of the students, then round the average down, and fill it into the table (remember to press Enter, otherwise the numbers won't save).",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "99666500-169b-1222-a481-829f01b02155",
+      "subset": "macosworld",
+      "category": "multi_apps",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Please help me revise this article according to the teacher's suggestions. The teacher's feedback is in review.txt on the desktop.",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "132c574d-ef6c-7633-c387-1d53b5826411",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I wrongly keyed in my actual food spending this month to be 205.75, which should be 305.75. Please help me correct this value in the budget calculator.",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "0b6ae1df-867d-bfd9-0dde-538cc4e282dc",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "In the project document, go to products and change my previous choice of the dishwasher to model B.",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "140d3f1f-c35a-e0ca-4c35-cd8b3a6220d0",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P0_2_frontmost_focus_and_setup_race",
+      "groupRationale": "Post-setup `pre_command` process-tree convergence + initial frontmost app attachment (no blind `com.apple.finder` override)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "I am using the current template from the last lecture to create slides for the next lecture. Help me change Lecture 5 to Lecture 6, and the title to \"Image Enhancement\".",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "6c13b520-a2ca-1556-9b85-e5662b5cf923",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P2_1_save_extension_and_gui_write_discipline",
+      "groupRationale": "Save sheet extension preservation (`.pages` / `.key`) and GUI editor write discipline (`Script Editor` vs verbal-only output)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "Please help me save the current file in a folder called `Lecture Notes New` on Desktop. Name the file as `Lecture 6 template`.",
+      "targetedGroup": "iwork_same_bundle_idempotent_and_keepalive"
+    },
+    {
+      "taskId": "4f7b220f-9041-4a82-bf6c-abd84093099c",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Numbers"
+      ],
+      "instruction": "Merge two existing documents in Numbers: 'finance_overview.csv' and 'expenses_detail.csv', combine their tables into a master overview table, and save it as 'complete_financial_report.xlsx' in the Documents folder.",
+      "targetedGroup": "macarena_iwork_libreoffice_donor_sync"
+    },
+    {
+      "taskId": "5457a409-9818-4a37-8075-fd4001ed5a22",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Keynote"
+      ],
+      "instruction": "Create a new presentation in Keynote using the 'Exhibition' template, and save it as 'Quarterly_Report.key' in the Documents folder.",
+      "targetedGroup": "macarena_iwork_libreoffice_donor_sync"
+    },
+    {
+      "taskId": "71479950-75a4-436c-a8f3-83adb0bed241",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Keynote"
+      ],
+      "instruction": "Create a new '~/Documents/Business_Review.key'. On the 4th slide, add a pie chart that represents market share with three slices labeled 'Product A', 'Product B', and 'Product C' with values 40%, 35%, and 25% respectively. Save the presentation as a pdf.",
+      "targetedGroup": "macarena_iwork_libreoffice_donor_sync"
+    },
+    {
+      "taskId": "9530fcb9-4665-4fd9-a411-0fa3e8653dd7",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Pages"
+      ],
+      "instruction": "Create a new document using the 'Resume' template, fill in the name Jane Riley, then save it as 'My_Resume.pages' in the Documents folder.",
+      "targetedGroup": "macarena_iwork_libreoffice_donor_sync"
+    },
+    {
+      "taskId": "a1d3b22f-4d2f-431f-95a4-43a5fc67230a",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_missing_iwork_and_libreoffice",
+      "groupRationale": "Donor app sync (`Keynote.app`, `Numbers.app`, `Pages.app`, `LibreOffice.app`) into `MacArena.utm`",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "LibreOffice"
+      ],
+      "instruction": "Import the CSV file 'employee_list.csv' from the Downloads folder into Calc, sort the data by last names, and save it as 'Sorted_Employee_List.csv' in the Documents folder.",
+      "targetedGroup": "macarena_iwork_libreoffice_donor_sync"
+    },
+    {
+      "taskId": "9e64f6c8-acd8-e187-fe8e-c2b6856913ba",
+      "subset": "macosworld",
+      "category": "productivity",
+      "baseVm": "osworld",
+      "regressionGroup": "P2_1_save_extension_and_gui_write_discipline",
+      "groupRationale": "Save sheet extension preservation (`.pages` / `.key`) and GUI editor write discipline (`Script Editor` vs verbal-only output)",
+      "baselineScore": 0.0,
+      "relatedApps": [],
+      "instruction": "How to save the current file to desktop with file name \"Template\"? Please help me do that.",
+      "targetedGroup": "macos_harness_skill_discipline"
+    },
+    {
+      "taskId": "dc6870aa-2ce4-4447-99d7-6af5b6638ee3",
+      "subset": "macarena",
+      "category": "productivity",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_2_obsidian_vault_and_patched_oracle_control",
+      "groupRationale": "Obsidian `ResearchVault` warm-trust indexing + upstream `InitialKeyRepeat` oracle inversion control (`--oracle-mode patched-oracle`)",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Obsidian"
+      ],
+      "instruction": "Inside ResearchVault, create a new note called \"Links.md\" that contains a wiki-link to \"Ideas.md\".",
+      "targetedGroup": "macos_harness_skill_discipline"
+    },
+    {
+      "taskId": "258922d0-23a3-4070-97c6-efa577da0dc4",
+      "subset": "macarena",
+      "category": "system_and_interface",
+      "baseVm": "macarena",
+      "regressionGroup": "P1_1_sdk_type_key_and_snapshot",
+      "groupRationale": "`type_text` enabled/timeout recovery, `press_key` alias mapping, `ui_snapshot` depth truncation, and system bundle lookup",
+      "baselineScore": 0.0,
+      "relatedApps": [
+        "Automator"
+      ],
+      "instruction": "Create a workflow that collects all files from the 'Downloads' folder older than 30 days and moves them to an 'Archived' folder in 'Documents'.",
+      "targetedGroup": "macos_harness_skill_discipline"
+    }
+  ]
+}
