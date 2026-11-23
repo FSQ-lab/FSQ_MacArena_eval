@@ -15,21 +15,14 @@ FROZEN_MODEL = "gpt-6.1-sol"
 INITIAL_BUNDLE_ID = "com.apple.finder"
 AUTO_FRONTMOST_BUNDLE_ID = "auto"
 
-APPIUM_CONNECT_WHEEL_DEFAULT = Path(
-    "/Users/qunmi/Documents/FSQ_LAB/appium-connect-agent/dist/appium_connect_agent-0.1.2-py3-none-any.whl"
-)
-APPIUM_CONNECT_WHEEL_SHA256 = (
-    "a6ac14573157138ff9140995f28081abf14114e3af794388f92cb9ab1692ec30"
-)
-APPIUM_CONNECT_SOURCE_COMMIT = "65363e7eae6310acf365dee652da7592196b6bb2"
+_RELEASE_WHEEL_DIR = Path("artifacts/state/pypi-sdk014-fsq039")
+APPIUM_CONNECT_WHEEL_DEFAULT = _RELEASE_WHEEL_DIR / "appium_connect_agent-0.1.4-py3-none-any.whl"
+APPIUM_CONNECT_WHEEL_SHA256 = "18e53b29d80fcf0bedbf65e600dc7342643cb1de6539c78131b4860978dee62b"
+APPIUM_CONNECT_SOURCE_COMMIT = "4707aec198c34264ab8dc1178005a45aa5a5bd41"
 
-FSQ_AGENT_WHEEL_DEFAULT = Path(
-    "/Users/qunmi/Documents/FSQ_LAB/FSQ/dist/fsq_agent-0.3.8-py3-none-any.whl"
-)
-FSQ_AGENT_WHEEL_SHA256 = (
-    "2927a13d5bca6e7e836cf0f7c9761840aaa17221bc4df7b3413a3ab2de69cbb7"
-)
-FSQ_AGENT_SOURCE_COMMIT = "761342030e545b1447420b282d35c2410d40e07d"
+FSQ_AGENT_WHEEL_DEFAULT = _RELEASE_WHEEL_DIR / "fsq_agent-0.3.9-py3-none-any.whl"
+FSQ_AGENT_WHEEL_SHA256 = "6c7993100e25dcb6dcdfbd1abc22f51e58c12b21e89b61c1dfbfe55322e3bd03"
+FSQ_AGENT_SOURCE_COMMIT = "aa3aeea1853deff7872f063d53259b84fa877d80"
 SUBSET_TO_BASE_VM: dict[SubsetName, str] = {
     "macarena": "macarena",
     "macosworld": "osworld",
@@ -82,14 +75,14 @@ def default_frozen_wheels(
     return (
         FrozenWheelSpec(
             package_name="appium-connect-agent",
-            version="0.1.2",
+            version="0.1.4",
             path=(appium_connect_wheel or APPIUM_CONNECT_WHEEL_DEFAULT).expanduser().resolve(),
             expected_sha256=APPIUM_CONNECT_WHEEL_SHA256,
             source_commit=APPIUM_CONNECT_SOURCE_COMMIT,
         ),
         FrozenWheelSpec(
             package_name="fsq-agent",
-            version="0.3.8",
+            version="0.3.9",
             path=(fsq_agent_wheel or FSQ_AGENT_WHEEL_DEFAULT).expanduser().resolve(),
             expected_sha256=FSQ_AGENT_WHEEL_SHA256,
             source_commit=FSQ_AGENT_SOURCE_COMMIT,

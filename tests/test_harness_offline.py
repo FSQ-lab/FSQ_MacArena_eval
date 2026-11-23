@@ -47,9 +47,11 @@ def test_verify_frozen_wheels_exact_sha256() -> None:
     assert receipt["model"] == "gpt-6.1-sol"
     assert receipt["initialBundleId"] == "auto"
     wheels = {w["packageName"]: w for w in receipt["wheels"]}
-    assert wheels["appium-connect-agent"]["version"] == "0.1.2"
+    assert wheels["appium-connect-agent"]["version"] == "0.1.4"
+    assert wheels["appium-connect-agent"]["sha256"] == "18e53b29d80fcf0bedbf65e600dc7342643cb1de6539c78131b4860978dee62b"
     assert wheels["appium-connect-agent"]["editable"] is False
-    assert wheels["fsq-agent"]["version"] == "0.3.8"
+    assert wheels["fsq-agent"]["version"] == "0.3.9"
+    assert wheels["fsq-agent"]["sha256"] == "6c7993100e25dcb6dcdfbd1abc22f51e58c12b21e89b61c1dfbfe55322e3bd03"
     assert wheels["fsq-agent"]["editable"] is False
 
 
