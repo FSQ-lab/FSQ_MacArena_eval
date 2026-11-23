@@ -1,0 +1,57 @@
+Third-party benchmark material
+==============================
+
+This repository is an evaluation harness, not the upstream benchmark. The
+curated lists in manifests/ contain task identifiers, categories, and excerpts
+of upstream task instructions. Harness annotations and historical scores in
+those lists are separate from the upstream task text. No VM images, task
+fixtures, evaluator checkout, or binary packages are distributed here.
+
+The source of the task metadata and instructions is MacPaw/MacArena at
+commit dcdc7d366da12641578ab90f085d69db91651c58:
+https://github.com/MacPaw/MacArena/tree/dcdc7d366da12641578ab90f085d69db91651c58
+
+- MacArena — Copyright 2026 MacPaw Way Ltd. MacPaw's original tasks (the
+  macarena subset) and its contributions are distributed under the MIT
+  License, subject to the upstream notices for third-party material.
+  License: https://github.com/MacPaw/MacArena/blob/dcdc7d366da12641578ab90f085d69db91651c58/LICENSE
+  Notice: https://github.com/MacPaw/MacArena/blob/dcdc7d366da12641578ab90f085d69db91651c58/NOTICE
+- macOSWorld — Copyright 2024 The showlab team. Task material in the
+  macosworld subset is licensed under Creative Commons Attribution-
+  NonCommercial 4.0 International (CC BY-NC 4.0). Its noncommercial
+  restriction applies to the corresponding task material in these manifests.
+  Source: https://github.com/showlab/macosworld
+  License: https://creativecommons.org/licenses/by-nc/4.0/
+- OSWorld — Copyright 2024 XLANG NLP Lab. The harness recognizes MacArena's
+  osworld subset, which is based on OSWorld under Apache License 2.0.
+  The current curated manifests do not include osworld task entries.
+  Source: https://github.com/xlang-ai/OSWorld
+  License: https://www.apache.org/licenses/LICENSE-2.0
+
+The manifests select a subset and add harness-specific fields. Task selection,
+serialization, and these annotations do not relicense the upstream material.
+This notice is not a license grant for the harness code or for VM images,
+macOS, third-party applications, or separately downloaded fixtures.
+
+MIT License (MacPaw original material only)
+-------------------------------------------
+
+Copyright (c) 2026 MacPaw Way Ltd.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

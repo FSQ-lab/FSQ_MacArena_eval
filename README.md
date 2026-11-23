@@ -18,3 +18,5 @@ Pass `--utm-documents-dir <baked-copy-directory>` before `run` to clone verified
 Stage the two exact [SDK](https://pypi.org/project/appium-connect-agent/0.1.4/#files) and [FSQ](https://pypi.org/project/fsq-agent/0.3.9/#files) wheels in `artifacts/state/pypi-sdk014-fsq039/` and run `fsq-macarena-eval verify-freeze` from the evaluation workspace root. The default freeze does not download wheels or fall back to candidate artifacts.
 
 Updating the host freeze does not update existing baked guests. Use a release-matched VM copy or install the frozen subject wheels plus a matching Eval worker into a disposable clone. Install from the exact local wheel files and retain them: the runner checks both the installed archive provenance and the bytes. Use a new campaign directory after changing the wheel freeze. The Phase 2 candidate launchers are historical and not used by the release freeze.
+
+See [NOTICE](NOTICE) for the provenance and licenses of upstream task material in the curated manifests.

@@ -7,6 +7,12 @@ __pycache__/
 # Virtual environments
 .venv/
 
+# Builds and package artifacts
+/dist/
+/build/
+*.egg-info/
+*.whl
+
 # Cloned upstream reference & downloaded VM images / runtime outputs
 MacArena/
 vm_cache/
@@ -15,5 +21,22 @@ runs/
 artifacts/
 tmp/
 *.utm/
+*.utm
+*.qcow2
+*.ipsw
 *.img
 *.mp4
+
+# Local environment and credentials
+.env*
+.ssh/
+*.pem
+*.key
+*.p12
+id_rsa*
+id_ed25519*
+id_ecdsa*
+credentials.json
+credential.json
+token.json
+*secret*
